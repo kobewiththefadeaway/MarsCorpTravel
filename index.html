@@ -1,12 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      /* Style the header */
+      #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightgray;
+      }
+
+      /* Style the logos */
+      #logo-left, #logo-right {
+        height: 100px;
+        width: 100px;
+      }
+
+      #logo-left img, #logo-right img {
+        height: 100%;
+      }
+
+      /* Style the navbar */
+      #navbar {
+        background-color: lightgray;
+      }
+
+      #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        font-family: monospace;
+        
+;
+      }
+
+      #navbar li {
+        margin: 0 10px;
+      }
+
+      #navbar a {
+        text-decoration: none;
+        color: black;
+      }
+
+      /* Style the main content */
+      #main-content {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo-left">
+        <img src="img/FinalDestLogoWithSign.png" alt="Logo Left">
+      </div>
+      <div id="logo-right">
+        <img src="img/logoFinal1.0d.png" alt="Logo Right">
+      </div>
+    </div>
+    <div id="navbar">
+      <ul>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="bookingform.html">Register</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div id="main-content">
+      <!-- Your main content goes here -->
+    </div>
+  </body>
 </html>

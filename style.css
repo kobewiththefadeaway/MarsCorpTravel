@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 2em;
+    margin: 1em 0;
+  }
+  
+  form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size
+  

@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Language Course Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Language Course Registration</h1>
+  <form id="registration-form">
+    <p>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" required>
+    </p>
+    <p>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" required>
+    </p>
+    <p>
+      <label for="language">Which language do you want to learn?</label><br>
+      <input type="radio" id="language" name="language" value="Spanish" required> Spanish<br>
+      <input type="radio" id="language" name="language" value="French" required> French<br>
+      <input type="radio" id="language" name="language" value="German" required> German
+    </p>
+    <p>
+      <label for="level">What is your current language level?</label><br>
+      <input type="radio" id="level" name="level" value="Beginner" required> Beginner<br>
+      <input type="radio" id="level" name="level" value="Intermediate" required> Intermediate<br>
+      <input type="radio" id="level" name="level" value="Advanced" required> Advanced
+    </p>
+    <p>
+      <button type="submit">Sign Up</button>
+    </p>
+  </form>
+  <script src="main.js"></script>
+  <form>
+    <input type="button" value="Go back!" onclick="history.go(-1)">
+   </form>
+</body>
+</html>
+
