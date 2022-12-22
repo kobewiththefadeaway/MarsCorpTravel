@@ -5,7 +5,7 @@
 </head>
 <body>
   <h1>Language Course Registration</h1>
-  <form id="registration-form">
+  <form id="registration-form" action="confirmation.html" method="post">
     <p>
       <label for="name">Name:</label><br>
       <input type="text" id="name" required>
@@ -13,6 +13,10 @@
     <p>
       <label for="email">Email:</label><br>
       <input type="email" id="email" required>
+    </p>
+    <p>
+      <label for="age">Age:</label><br>
+      <input type="range" min="18" max="100" id="age" value="18">
     </p>
     <p>
       <label for="language">Which language do you want to learn?</label><br>
@@ -25,6 +29,14 @@
       <input type="radio" id="level" name="level" value="Beginner" required> Beginner<br>
       <input type="radio" id="level" name="level" value="Intermediate" required> Intermediate<br>
       <input type="radio" id="level" name="level" value="Advanced" required> Advanced
+    </p>
+    <p>
+      <label for="days">What days are you available for class?</label><br>
+      <input type="checkbox" id="days" name="days" value="Monday"> Monday<br>
+      <input type="checkbox" id="days" name="days" value="Tuesday"> Tuesday<br>
+      <input type="checkbox" id="days" name="days" value="Wednesday"> Wednesday<br>
+      <input type="checkbox" id="days" name="days" value="Thursday"> Thursday<br>
+      <input type="checkbox" id="days" name="days" value="Friday"> Friday
     </p>
     <p>
       <button type="submit">Sign Up</button>

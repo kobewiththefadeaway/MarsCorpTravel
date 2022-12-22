@@ -6,7 +6,7 @@ form.addEventListener('submit', e => {
 
   if (form.checkValidity()) {
     // Form is valid, submit it and show the confirmation page
-    window.location.href = 'confirmationpage.html';
+    window.location.href = 'confirmation.html';
   } else {
     // Form is invalid, display an error message
     errorMessage.textContent = 'Please fill out all fields correctly.';
@@ -35,7 +35,7 @@ form.addEventListener('submit', function(event) {
   sessionStorage.setItem('language', language);
   sessionStorage.setItem('level', level);
   // Redirect to the confirmation page
-  window.location.href = 'confirmationpage.html';
+  window.location.href = 'confirmation.html';
 });
 
 // On the confirmation page, retrieve the registration details from session storage and display them
