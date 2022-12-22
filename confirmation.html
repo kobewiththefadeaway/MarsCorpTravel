@@ -1,16 +1,66 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Language Course Registration Confirmation</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Space Travel Confirmation Page</title>
+  <style>
+    body {
+      font-family: monospace;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-image: url("img/vibrant-night-sky-with-stars-nebula-galaxy.jpg");
+      background-size: cover;
+      background-repeat:no-repeat;
+      position:center;
+      font-size: 25px;
+      color: blanchedalmond;
+            }
+
+    h1, h2 {
+      text-align: center;
+      position: center;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>Thank you for registering for a language course!</h1>
-  <p>Here is a summary of your registration:</p>
-  <ul id="confirmation-details">
-    <li>Name: <span id="name"></span></li>
-    <li>Email: <span id="email"></span></li>
-    <li>Language: <span id="language"></span></li>
-    <li>Level: <span id="level"></span></li>
-  </ul>
+  <h1>Space Travel Agency</h1>
+  <h2>Trip Confirmation</h2>
+
+  <p>Thank you for booking your trip with Space Travel Agency! Your trip details are listed below:</p>
+
+  <table>
+    <tr>
+      <th>Destination</th>
+      <th>Departure Date</th>
+      <th>Return Date</th>
+      <th>Number of Travelers</th>
+    </tr>
+    <tr>
+      <td id="destination"></td>
+      <td id="departure-date"></td>
+      <td id="return-date"></td>
+      <td id="num-travelers"></td>
+    </tr>
+  </table>
+
+  <p>A confirmation email has been sent to your email address. Please bring a copy of this confirmation and a valid form of identification to the spaceport on the day of your departure.</p>
+
+  <script>
+    // Get the form field values using JavaScript
+    const destination = new URL(window.location.href).searchParams.get("destination");
+    const departureDate = new URL(window.location.href).searchParams.get("departure-date");
+    const returnDate = new URL(window.location.href).searchParams.get("return-date");
+    const numTravelers = new URL(window.location.href).searchParams.get("num-travelers");
+
+    // Set the form field values on the confirmation page
+    document.getElementById("destination").textContent = destination;
+    document.getElementById("departure-date").textContent = departureDate;
+    document.getElementById("return-date").textContent = returnDate;
+    document.getElementById("num-travelers").textContent = numTravelers;
+  </script>
 </body>
 </html>

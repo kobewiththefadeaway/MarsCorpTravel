@@ -1,51 +1,74 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Language Course Registration</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Space Travel Company Booking Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      font-family: monospace;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-image: url("img/vibrant-night-sky-with-stars-nebula-galaxy.jpg");
+      background-size: cover;
+      background-repeat:no-repeat;
+      position:center;
+      font-size: 25px;
+      color: blanchedalmond;
+            }
+
+    h1, h2 {
+      text-align: center;
+      position: center;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>Language Course Registration</h1>
-  <form id="registration-form" action="confirmation.html" method="post">
-    <p>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" required>
-    </p>
-    <p>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" required>
-    </p>
-    <p>
-      <label for="age">Age:</label><br>
-      <input type="range" min="18" max="100" id="age" value="18">
-    </p>
-    <p>
-      <label for="language">Which language do you want to learn?</label><br>
-      <input type="radio" id="language" name="language" value="Spanish" required> Spanish<br>
-      <input type="radio" id="language" name="language" value="French" required> French<br>
-      <input type="radio" id="language" name="language" value="German" required> German
-    </p>
-    <p>
-      <label for="level">What is your current language level?</label><br>
-      <input type="radio" id="level" name="level" value="Beginner" required> Beginner<br>
-      <input type="radio" id="level" name="level" value="Intermediate" required> Intermediate<br>
-      <input type="radio" id="level" name="level" value="Advanced" required> Advanced
-    </p>
-    <p>
-      <label for="days">What days are you available for class?</label><br>
-      <input type="checkbox" id="days" name="days" value="Monday"> Monday<br>
-      <input type="checkbox" id="days" name="days" value="Tuesday"> Tuesday<br>
-      <input type="checkbox" id="days" name="days" value="Wednesday"> Wednesday<br>
-      <input type="checkbox" id="days" name="days" value="Thursday"> Thursday<br>
-      <input type="checkbox" id="days" name="days" value="Friday"> Friday
-    </p>
-    <p>
-      <button type="submit">Sign Up</button>
-    </p>
-  </form>
-  <script src="main.js"></script>
-  <form>
-    <input type="button" value="Go back!" onclick="history.go(-1)">
-   </form>
+  <h1>Space Travel Company</h1>
+  <h2>Book Your Trip to the Cosmos</h2>
+
+  <form id="booking-form" action="confirmation.html" method="post">
+    <label for="destination">Select your destination:</label><br>
+    <select id="destination" name="destination">
+      <option value="moon">Moon</option>
+      <option value="mars">Mars</option>
+      <option value="jupiter">Jupiter</option>
+    </select><br><br>
+
+    <label for="departure-date">Select your departure date:</label><br>
+    <input type="date" id="departure-date" name="departure-date"><br><br>
+
+    <label for="return-date">Select your return date:</label><br>
+    <input type="date" id="return-date" name="return-date"><br><br>
+
+    <label for="num-travelers">Number of travelers:</label><br>
+    <input type="number" id="num-travelers" name="num-travelers" min="1"><br><br>
+
+    <label for="age">Select your age:</label><br>
+    <input type="range" id="age" name="age" min="18" max="100" value="30"><br><br>
+
+    <p>Have you traveled to space before?</p>
+    <input type="radio" id="yes" name="experience" value="yes">
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="experience" value="no">
+    <label for="no">No</label><br><br>
+
+    <p>What activities are you interested in doing during your trip?</p>
+    <input type="checkbox" id="sightseeing" name="activity" value="sightseeing">
+    <label for="sightseeing">Sightseeing</label><br>
+    <input type="checkbox" id="research" name="activity" value="research">
+    <label for="research">Research</label><br>
+    <input type="checkbox" id="relaxation" name="activity" value="relaxation">
+    <label for="relaxation">Relaxation</label><br><br>
+
+    <input type="submit" value="Submit">
+  </form> 
+
+  <script src="form-validation.js"></script>
 </body>
 </html>
 
